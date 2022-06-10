@@ -4,3 +4,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+img {
+  max-width: 100%;
+}
+
+header {
+  height: 80px;
+  background-color: #2e3a46;
+  display: flex;
+  align-items: center;
+}
+
+.img-logo {
+  width: 60px;
+  margin-left: 20px;
+}

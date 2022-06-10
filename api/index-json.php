@@ -17,6 +17,9 @@
 <body>
 
   <header>
+    <div class="img-logo">
+      <img src="../img/logo-spotify.png" alt="">
+    </div>
   </header>
 
   <main id="root">
