@@ -5,10 +5,30 @@
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
+html {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Utility */
+.container {
+  width: 70%;
+  margin: 0 auto;
+
+  /* TEST */
+ /* height: 300px; */
+ /* background-color: lightblue; */
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: #1e2d3b;
+}
+
+/* HEADER */
 header {
   height: 80px;
   background-color: #2e3a46;
@@ -20,3 +40,37 @@ header {
   width: 60px;
   margin-left: 20px;
 }
+
+/* MAIN */
+main {
+  padding: 3rem 0;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main h2 {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: white;
+}
+
+main h5 {
+  margin-bottom: .5rem;
+}
+
+.card {
+  width: calc(100% / 5 - 10px);
+  margin: 10px 5px;
+  padding: .7rem;
+  text-align: center;
+  min-height: 300px;
+  background-color: #2e3a46;
+}
+
+.text-card {
+  color: gray;
+}
+

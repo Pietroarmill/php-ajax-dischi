@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width= , initial-scale=1.0">
+  <meta name="viewport", initial-scale=1.0">
   <title>Document</title>
   <!-- vue -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.common.dev.min.js" integrity="sha512-TpgbLHXaTCAZ7ULhjopb1PveTz5Jx6KEQUtMfXhV0m0EArh+6O8ybZjjDN1Yug6oagN6iFm6EoMjuYSiFr0qXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -23,9 +23,20 @@
   </header>
 
   <main id="root">
-    <section class="container">
-      <h1>{{ name }}</h1>
-    </section>
+    <div class="container">
+      <div class="main-content">
+        <div class="card" v-for="song in songs">
+          <div class="img-card">
+            <img :src="song.poster" alt="">
+          </div>
+          <div class="text-card">
+            <h2>{{ song.title }}</h2>
+            <h5>{{ song.author }}</h5>
+            <small>{{ song.year }}</small>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
